@@ -5,8 +5,8 @@
 class Doma < Formula
   desc "Put your directories on the cutting board"
   homepage "https://github.com/hahwul/doma"
-  url "https://github.com/hahwul/doma/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "de595c22912b351ce951d0f5fbd783b0cab500984e5d5c474c21bfc181ad62a4"
+  url "https://github.com/hahwul/doma/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "0b329acbb737bcbdbcbc593e34811351d44e918ac30ba6c8a6ed26479c8f3a70"
   license "MIT"
 
   depends_on "crystal"
