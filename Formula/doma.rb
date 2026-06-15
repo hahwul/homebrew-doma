@@ -6,7 +6,7 @@
 class Doma < Formula
   desc "Directory tag manager - put your directories on the cutting board"
   homepage "https://github.com/hahwul/doma"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   # doma ships prebuilt binaries: Linux is statically linked (musl) and macOS
@@ -15,28 +15,28 @@ class Doma < Formula
   # guard in release-binary.yml enforces that no Homebrew dylib leaks in.
   on_macos do
     on_arm do
-      url "https://github.com/hahwul/doma/releases/download/v0.2.1/doma-v0.2.1-osx-arm64"
-      sha256 "6a5d3026784fa101ce7191ce896774bacd3fc615140cac4412a92f6babd90dac"
+      url "https://github.com/hahwul/doma/releases/download/v0.3.0/doma-v0.3.0-osx-arm64"
+      sha256 "df0e0817d0eca4984e62ddec2cbcbedbd12da323a5e6915401e9bfb7afb14ca2"
     end
     on_intel do
-      url "https://github.com/hahwul/doma/releases/download/v0.2.1/doma-v0.2.1-osx-x86_64"
-      sha256 "e426c15d7afac027f0b531c4c83fb09be9db9c038c43d279b4c409a11964d4c1"
+      url "https://github.com/hahwul/doma/releases/download/v0.3.0/doma-v0.3.0-osx-x86_64"
+      sha256 "2839d53c3f5852c88b0aa7a5459efb58ba4e9bb49071a0da82f4f917c26d4355"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hahwul/doma/releases/download/v0.2.1/doma-v0.2.1-linux-arm64"
-      sha256 "8c8de4152900f48f4719782e4c2e1e62ea104638f2773c1b754ad67c21a68ad4"
+      url "https://github.com/hahwul/doma/releases/download/v0.3.0/doma-v0.3.0-linux-arm64"
+      sha256 "b1cd1a36395bf7117c89061dd51cdf689a66ae7a5ba938798268b1816c720a79"
     end
     on_intel do
-      url "https://github.com/hahwul/doma/releases/download/v0.2.1/doma-v0.2.1-linux-x86_64"
-      sha256 "1c7e25c39ef4c99e34148d97c29705bd491e808445551e3b181900342430cc81"
+      url "https://github.com/hahwul/doma/releases/download/v0.3.0/doma-v0.3.0-linux-x86_64"
+      sha256 "4944ac849cf5f12d3178c002d2f373a157baefa6f08bee4529cf8a0a8ebda592"
     end
   end
 
   def install
-    bin.install Dir["doma-v0.2.1-*"].first => "doma"
+    bin.install Dir["doma-v0.3.0-*"].first => "doma"
   end
 
   test do
